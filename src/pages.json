@@ -1,16 +1,261 @@
 {
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/login/login",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom" //隐藏顶部导航条
 			}
+			//  "meta": {
+			// "activeMenu": "/medical/drugs/druge/list"
+			//  }
+		},
+		// {
+		// 	"path": "pages/index/index"
+		// },
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+				// "navigationStyle": "custom" //隐藏顶部导航条
+			}
+		}, {
+			"path": "pages/team/team",
+			"style": {
+				"navigationBarTitleText": "专业队管理"
+			}
+		}, {
+			"path": "pages/team/add",
+			"style": {
+				"navigationBarTitleText": "专业队信息"
+			}
+		}, {
+			"path": "pages/team/detail",
+			"style": {
+				"navigationBarTitleText": "专业队信息"
+			}
+		}, {
+			"path": "pages/member/member",
+			"style": {
+				"navigationBarTitleText": "队员信息"
+			}
+		}, {
+			"path": "pages/member/detail",
+			"style": {
+				"navigationBarTitleText": "队员信息"
+			}
+		}, {
+			"path": "pages/personnel/personnel",
+			"style": {
+				"navigationBarTitleText": "人员调整"
+			}
+		}, {
+			"path": "pages/personnel/add",
+			"style": {
+				"navigationBarTitleText": "队员信息"
+			}
+		}, {
+			"path": "pages/militarySource/militarySource",
+			"style": {
+				"navigationBarTitleText": "兵源查询列表"
+			}
+		}, {
+			"path": "pages/expansion/expansion",
+			"style": {
+				"navigationBarTitleText": "战时扩编"
+			}
+		}, {
+			"path": "pages/expansion/list",
+			"style": {
+				"navigationBarTitleText": "选择专业队"
+			}
+		}, {
+			"path": "pages/upload/upload",
+			"style": {
+				"navigationBarTitleText": "资料上传"
+			}
+		}, {
+			"path": "pages/train/trainingProgram",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理"
+			}
+		}, {
+			"path": "pages/train/trainingTeam",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/train/trainingProgramTwo",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理"
+			}
+		},
+		{
+			"path": "pages/train/train",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理"
+			}
+		}, {
+			"path": "pages/train/trainDetail",
+			"style": {
+				"navigationBarTitleText": "训练计划发布详情"
+			}
+		}, {
+			"path": "pages/train/member",
+			"style": {
+				"navigationBarTitleText": "参与队员"
+			}
+		}, {
+			"path": "pages/train/trainMember",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/train/add",
+			"style": {
+				"navigationBarTitleText": "训练计划发布与管理"
+			}
+		}, {
+			"path": "components/memberSelect",
+			"style": {
+				"navigationBarTitleText": "选择参训队员"
+			}
+		}, {
+			"path": "components/timePop"
+		}, {
+			"path": "pages/task/task",
+			"style": {
+				"navigationBarTitleText": "任务发布"
+			}
+		}, {
+			"path": "pages/task/fillNumber",
+			"style": {
+				"navigationBarTitleText": "填写数量"
+			}
+		}, {
+			"path": "pages/task/equipmentList",
+			"style": {
+				"navigationBarTitleText": "选择装备"
+			}
+		}, {
+			"path": "pages/history/history",
+			"style": {
+				"navigationBarTitleText": "历史点验记录"
+			}
+		}, {
+			"path": "pages/history/detail",
+			"style": {
+				"navigationBarTitleText": "历史任务详情"
+			}
+		}, {
+			"path": "pages/organization/organization",
+			"style": {
+				"navigationBarTitleText": "组织架构"
+			}
+		}, {
+			"path": "pages/organization/add",
+			"style": {
+				"navigationBarTitleText": "组织架构信息"
+			}
+		}, {
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习管理"
+			}
+		}, {
+			"path": "pages/study/detail",
+			"style": {
+				"navigationBarTitleText": "学习管理"
+			}
+		}, {
+			"path": "pages/study/release",
+			"style": {
+				"navigationBarTitleText": "发布内容"
+			}
+		},
+		{
+			"path": "pages/trainingProgram/trainingProgram",
+			"style": {
+				"navigationBarTitleText": "训练计划"
+			}
+		},
+		{
+			"path": "pages/trainingProgram/trainingProgramTwo",
+			"style": {
+				"navigationBarTitleText": "训练计划"
+			}
+		}, {
+			"path": "pages/trainingProgram/detail",
+			"style": {
+				"navigationBarTitleText": "训练计划"
+				// "navigationStyle": "custom" //隐藏顶部导航条
+			}
+		}, {
+			"path": "pages/trainingProgram/member",
+			"style": {
+				"navigationBarTitleText": "参训队员"
+			}
+		}, {
+			"path": "pages/taskAction/taskAction",
+			"style": {
+				"navigationBarTitleText": "行动任务"
+			}
+		}, {
+			"path": "pages/taskAction/detail",
+			"style": {
+				"navigationBarTitleText": "行动任务"
+				// "navigationStyle": "custom" //隐藏顶部导航条
+			}
+		}, {
+			"path": "components/popSelect"
+		}, {
+			"path": "pages/overlapping/overlapping",
+			"style": {
+				"navigationBarTitleText": "交叉编兵审核"
+			}
+		}, {
+			"path": "pages/overlapping/detail",
+			"style": {
+				"navigationBarTitleText": "队员信息"
+			}
+		}, {
+			"path": "pages/overlapping/replace",
+			"style": {
+				"navigationBarTitleText": "替换队员信息"
+			}
+		}, {
+			"path": "pages/video/video",
+			"style": {
+				// "navigationStyle": "custom" //隐藏顶部导航条
+				// "navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/video/list",
+			"style": {
+				// "navigationStyle": "custom" //隐藏顶部导航条
+				// "navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/taskAction/edit",
+			"style": {
+				"navigationBarTitleText": "行动任务",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "浙里防",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationStyle": "custom" //隐藏顶部导航条
+		// "backgroundColor": "#000000"
 	}
 }

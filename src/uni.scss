@@ -13,6 +13,9 @@
  */
 
 /* 颜色变量 */
+	// @import "uview-ui/index.scss";
+	// @import "./static/scss/index.scss";
+    @import "uview-ui/theme.scss";
 
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;

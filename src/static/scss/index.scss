@@ -1,0 +1,467 @@
+	// 顶部导航
+	.navTop{
+			flex: 2;
+			padding-right: 32rpx;
+			border: none;
+			.navTitle{
+				flex: 2;
+				text-align: center;
+				font-size: 16px;
+				font-family: PingFangSC-Medium, PingFang SC;
+				font-weight: 500;
+				color: #333333;
+			}
+			.navRig{
+				font-size: 28rpx;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #007AFF;
+			}
+	}
+	// 弹性布局
+	.flexCenter{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.flexCenter1{
+		display: flex;
+		align-items: center;
+	}
+	.flexEnd{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	// 文字超3行之外显示省略号
+	.ellipsis{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+	// 文字单行之外显示省略号
+	.ellipsisOne{
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// display: -webkit-box;
+		// -webkit-line-clamp: 1;
+		// -webkit-box-orient: vertical;
+	}
+	
+	// 列表ul背景
+	.backBox{
+		min-height: 100vh;
+		background-color: #FAFAFA;
+	}
+	
+	// 新增图片
+	.imgAdd {
+		width: 112rpx;
+		height: 112rpx;
+		position: fixed;
+		right: 50rpx;
+		bottom: 168rpx;
+	}
+	// 新增确定按钮
+	.addDeter{
+		width: 690rpx;
+		height: 80rpx;
+		background: #007AFF;
+		border-radius: 8rpx;
+		margin: 120rpx 32rpx 0;
+		font-size: 36rpx;
+		font-family: PingFangSC-Medium, PingFang SC;
+		font-weight: 500;
+		color: #FFFFFF
+	}
+	.addDeterCop{
+		width: 690rpx;
+		height: 80rpx;
+		background: #007AFF;
+		border-radius: 8rpx;
+		// margin: 120rpx 32rpx 0;
+		font-size: 36rpx;
+		font-family: PingFangSC-Medium, PingFang SC;
+		font-weight: 500;
+		color: #FFFFFF
+	}
+	
+	// 编辑信息样式
+	.infUl{
+			padding: 0 32rpx;
+			.infUlLi{
+				.redTs{
+					color: #DD001B;
+				}
+				// width: 750rpx;
+				height: 96rpx;
+				background: #FFFFFF;
+				border-bottom: 2rpx solid #F8F8F8;
+				display: flex;
+				align-items: center;
+					font-size: 28rpx;
+					font-family: PingFangSC-Regular, PingFang SC;
+					font-weight: 400;
+				// box-sizing: border-box;
+				// justify-content: space-between;
+				
+				.iulL{
+					min-width: 176rpx;
+					// min-width: 196rpx;
+					// color: #333333;
+					color: #999999;
+					margin-right: 24rpx;
+				}
+				.iulR{
+					flex: 2;
+					.iulrInput{
+						// color: #999999;
+					}
+					.iulRtex{
+						font-size: 28rpx;
+						font-family: PingFangSC-Regular, PingFang SC;
+						font-weight: 400;
+					}
+					.iulRtexColAct{
+						color: #333333;
+					}
+					.iulRtexCol{
+						color: #C0C4CC;
+					}
+					.iulRrig{
+						width: 32rpx;
+						height: 32rpx;
+					}
+				}
+			}
+		
+	}
+	
+	// 详情样式
+	.detailUl{
+		padding: 0 30rpx;
+		box-sizing: border-box;
+		.detailUlLi{
+			// width: 750rpx;
+			// min-height: 96rpx;
+			padding: 24rpx 0;
+			border-bottom: 2rpx solid #F8F8F8;
+			font-size: 24rpx;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			display: flex;
+			align-items: center;
+			.redTs{
+				color: #DD001B;
+			}
+			.detailUlLiL{
+				// min-width: 146rpx;
+				min-width: 160rpx;
+				color: #999999;
+				margin-right: 54rpx;
+			}
+			.detailUlLiR{
+				color: #333333;
+					flex: 2;
+						
+					.iulrInput{
+						// color: #999999;
+					}
+					.iulRtexBox{
+						width: 100%;
+					}
+					.iulRtex{
+						// width: 100%;
+						font-size: 28rpx;
+						font-family: PingFangSC-Regular, PingFang SC;
+						font-weight: 400;
+						flex: 2;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
+						// margin-right: auto;
+						.iulRtexItem{
+							// flex-shrink: 0;
+							margin-right: 20rpx;
+							display: inline-block;
+							// flex-shrink: 0;
+							// display: block;
+							// flex-shrink: 0;
+						}
+					}
+					.iulRtexColAct{
+						color: #333333;
+					}
+					.iulRtexCol{
+						color: #C0C4CC;
+					}
+					.iulRrig{
+						flex-shrink: 0;
+						width: 32rpx;
+						height: 32rpx;
+					}
+					.deUlLiRtex{
+						flex-shrink: 0;
+						width: 128rpx;
+						margin-left: 20rpx;
+						// font-size: 24rpx;
+						// font-family: PingFangSC-Regular, PingFang SC;
+						// font-weight: 400;
+						// color: #333333;
+					}
+			}
+		}
+		.deUlLiLtex{
+			.deUlLiLcon{
+			margin: 64rpx 0;
+			line-height: 38rpx;
+			}
+			.deUlLiLimgBox{
+				flex-wrap: wrap;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				// margin-left: 8rpx;
+				.deUlLiLimg{
+					// flex: 0 0 33.3%;
+					// padding: 0 10rpx 0 ;
+					// box-sizing: border-box;
+				border-radius: 6rpx;
+				overflow: hidden;
+					width: 200rpx;
+					height: 192rpx;
+					margin-bottom: 20rpx;
+				}
+			}
+			// .deUlLiLimgBox:after{
+			// 	content:'';
+			// 	width:29%;
+			// 	display: block;
+			// }
+	
+		}
+		.deUlLimember{
+			width: calc(100vw - 60rpx);
+			font-size: 28rpx;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #333333;
+			// margin-bottom: 96rpx;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			.deUlLimeText{
+				margin-right: 62rpx;
+				flex-shrink: 0;
+			}
+		}
+	}
+		// 上传
+		
+		.uploadInp{
+			// padding: 64rpx 30rpx 20rpx;
+		.uploBox{
+			width: 200rpx;
+			height: 192rpx;
+			background: #F7F7F7;
+			border-radius: 6rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 10rpx;
+			margin-left: 8rpx;
+			.uploImg{
+				width: 48rpx;
+				height: 48rpx;
+			}
+		}
+		}
+	
+	// 底部弹出单列选择框
+	.expTopBox {
+		padding: 0 30rpx;
+	
+		.expTop {
+			height: 100rpx;
+			line-height: 100rpx;
+			font-size: 32rpx;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #333333;
+			text-align: center;
+			border-bottom: 2rpx solid #EEEEEE;
+	
+			.expTopimg {
+				width: 40rpx;
+				height: 40rpx;
+			}
+		}
+		
+		    .picker-view {
+		        // width: 750rpx;
+		        height: 600rpx;
+		        margin-bottom: 20rpx;
+		    }
+		    .item {
+		        height: 80rpx;
+		        align-items: center;
+		        justify-content: center;
+		        text-align: center;
+				line-height: 80rpx;
+		    }
+	}
+	
+	// 列表蓝点
+	.blueDot{
+		width: 8rpx;
+		height: 8rpx;
+		border-radius: 4rpx;
+		background: #007AFF;
+		display: inline-block;
+		margin-right: 20rpx;
+	}
+	
+// 统一列表样式
+	
+	.teamUl {
+		// background-color: #FAFAFA;
+		padding: 32rpx 30rpx;
+		.tuLi {
+				margin-bottom: 26rpx;
+			.tuliL {
+				// width: 690rpx;
+				// height: 228rpx;
+				background: #FFFFFF;
+				border-radius: 8rpx;
+				background-color: #FFFFFF;
+				padding: 28rpx 32rpx;
+	
+				.tuLText {
+					font-size: 28rpx;
+					font-family: PingFangSC-Medium, PingFang SC;
+					font-weight: 500;
+					color: #333333;
+					margin-bottom: 16rpx;
+				}
+				.textMargR{
+					margin-right: 16rpx;
+				}
+				.textColor1{
+					color: #007AFF;
+				}
+				.textColor{
+					color: #666666;
+				}
+				.textFontsize{
+					font-size: 32rpx;
+				}
+				.textFontsize1{
+					font-size: 24rpx;
+				}
+				.textFontsize2{
+					font-size: 28rpx;
+				}
+	
+				.tuLText1 {
+					font-size: 28rpx;
+					font-family: PingFangSC-Medium, PingFang SC;
+					font-weight: 400;
+					color: #333333;
+					margin-bottom: 32rpx;
+				}
+	
+				.tuLTeBox {
+					margin-bottom: 10rpx;
+	
+					.tuLTeBoLab {
+						font-size: 28rpx;
+						font-family: PingFangSC-Regular, PingFang SC;
+						font-weight: 400;
+						color: #999999;
+					}
+	
+					.tuLTeBoCon {
+						// display: inline-block;
+						// width: 140rpx;
+						font-size: 28rpx;
+						font-family: PingFangSC-Regular, PingFang SC;
+						font-weight: 400;
+						color: #333333;
+					}
+	
+					.marginR {
+						margin-right: 56rpx;
+					}
+	
+				}
+	
+			}
+	
+			.tuliR {
+				// margin-bottom: 16rpx;
+				// width: 345px;
+				// height: 40px;
+				padding: 20rpx 0;
+				background: rgba(0, 122, 255, 0.04);
+				border-radius: 0px 0px 4px 4px;
+	
+				.tuliRli {
+					// min-width: ;
+					margin-right: 48rpx;
+					font-size: 16px;
+					font-family: PingFangSC-Regular, PingFang SC;
+					font-weight: 400;
+					color: #007AFF;
+					line-height: 22px;
+				}
+					.meLiLname{
+						margin-bottom: 16rpx;
+					}
+				.tuliRlicolor{
+					color: #DE3C2A;
+				}
+				.tuliRlicolor1{
+					color: #41B482;
+				}
+				.tuliRlicolor2{
+					color: #FFD662;
+				}
+	
+				.tuliRImg {
+					width: 32rpx;
+					height: 32rpx;
+					margin-right: 16rpx;
+				}
+	
+				.edit {
+					margin-bottom: 26rpx;
+				}
+	
+			}
+	
+		}
+	
+	}
+	
+	.flex2{
+		flex: 2;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
