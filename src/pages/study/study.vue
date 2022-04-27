@@ -5,7 +5,7 @@
 				<view class="navTitle">
 					<!-- 学习管理 -->
 				</view>
-				<view class="navRig" @click='goRele' v-if="$store.state.roleId==1 || $store.state.roleId==2">
+				<view class="navRig" @click='goRele' v-permission="[1,2]" >
 					发布
 				</view>
 			</view>

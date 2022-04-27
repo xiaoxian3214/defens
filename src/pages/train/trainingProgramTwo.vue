@@ -27,15 +27,15 @@
 				</view>
 				<!-- v-if="roleId==1?item.isCity==1:true" -->
 				<view class="tuliR flexEnd">
-					<view class="tuliRli flexCenter1" @click='add(item)' v-if="roleId==1||roleId==2">
+					<view class="tuliRli flexCenter1" @click='add(item)' v-permission="[1,2]">
 						<image src="../../static/img/edit.png" mode="" class="tuliRImg">
 						</image> 编辑
 					</view>
-					<view class="tuliRli flexCenter1 tuliRlicolor" @click='dele(item)' v-if="roleId==1||roleId==2">
+					<view class="tuliRli flexCenter1 tuliRlicolor" @click='dele(item)' v-permission="[1,2]">
 						<image src="../../static/img/dele.png" mode="" class="tuliRImg"></image>
 						删除
 					</view>
-					<view class="tuliRli flexCenter1 " @click='detail(item)' v-if="roleId==4">
+					<view class="tuliRli flexCenter1 " @click='detail(item)' v-permission="[4]">
 						详情
 					</view>
 				</view>

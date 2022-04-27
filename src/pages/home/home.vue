@@ -32,7 +32,7 @@
 				队伍整组
 			</view>
 			<view class="hometUl">
-				<view class="huLi" @click="goRout(0)" v-if="roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(7)">
+				<view class="huLi" @click="goRout(0)" v-permission="[1,2,7]">
 					<image src="../../static/img/home/tuLi1.png" mode="" class="huLiImg"></image>
 					<view class="huLiText">
 						专业队管理
@@ -44,7 +44,7 @@
 						队员信息
 					</view>
 				</view>
-				<view class="huLi" @click="goRout(2)" v-if="roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(3)||roleIdList.includes(4)">
+				<view class="huLi" @click="goRout(2)" v-permission="[1,2,3,4]" >
 					<image src="../../static/img/home/tuLi3.png" mode="" class="huLiImg"></image>
 					<view class="huLiText">
 						人员调整
@@ -62,7 +62,7 @@
 						兵源查询
 					</view>
 				</view>
-				<view class="huLi" @click="goRout(5)" v-if="roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(3)">
+				<view class="huLi" @click="goRout(5)" v-permission="[1,2,3]">
 					<image src="../../static/img/home/tuLi6.png" mode="" class="huLiImg"></image>
 					<view class="huLiText">
 						战时扩编
@@ -91,8 +91,7 @@
 						训练计划
 					</view>
 				</view> -->
-				<view class="huLi" @click="goRout(8)" v-if="
-				roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(3)||roleIdList.includes(4)||roleIdList.includes(7)">
+				<view class="huLi" @click="goRout(8)" v-permission="[1,2,3,4,7]" >
 					<view class="huLiImg">
 						<image src="../../static/img/home/tuLi9.png" mode="" class="huLiImg"></image>
 						<!-- <view class="badge">
@@ -103,7 +102,7 @@
 						<view class="">
 							训练计划
 						</view>
-						<view class="" v-if="roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(3)||roleIdList.includes(7)">
+						<view class="" v-permission="[1,2,3,7]">
 							发布与管理
 						</view>
 					</view>
@@ -138,7 +137,7 @@
 						行动任务
 					</view>
 				</view>
-				<view class="huLi" @click="goRout(15)" v-if="roleIdList.includes(3)||roleIdList.includes(4)">
+				<view class="huLi" @click="goRout(15)" v-permission="[3,4]">
 					<image src="../../static/img/home/tuLi16.png" mode="" class="huLiImg"></image>
 					<view class="huLiText">
 						<view class="">
@@ -150,7 +149,7 @@
 					</view>
 				</view>
 				<!-- {{roleId}} -->
-				<view class="huLi" @click="goRout(9)" v-if="roleIdList.includes(1)||roleIdList.includes(2)">
+				<view class="huLi" @click="goRout(9)" v-permission="[1,2]">
 					<view class="huLiImg">
 						<image src="../../static/img/home/tuLi10.png" mode="" class="huLiImg"></image>
 						<!-- <view class="badge">
@@ -177,7 +176,7 @@
 		</view>
 		<!-- <u-gap height="16" bg-color="#F5F5F5" margin-bottom='40'></u-gap> -->
 		<!-- 组织架构 -->
-		<view class="hometUlBox" v-if="roleIdList.includes(1)||roleIdList.includes(2)||roleIdList.includes(7)">
+		<view class="hometUlBox" v-permission="[1,2,7]">
 			<view class="hulTitle">
 				组织架构
 			</view>
@@ -244,7 +243,6 @@
 			}
 		},
 		onLoad() {
-			console.log(uni.getStorageSync('roleIdList'),)
 			// dd.hideTitleBar()
 			let pagePath = this.$mp.page.route
 			this.$myMD.userReporting(pagePath, 'home')

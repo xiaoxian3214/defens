@@ -165,7 +165,8 @@
 							// uni.setStorageSync('token', res.data.token);
 						} else {
 							uni.setStorageSync('token', res.data.token);
-							uni.setStorageSync('roleId', res.data.roleId);
+							uni.setStorageSync('roleId', res.data.roleIds);
+						    uni.setStorageSync('roleIdList',res.data.roleIdList);
 							uni.setStorageSync('userInfor', JSON.stringify(res.data));
 							// uni.redirectTo({
 							// 	url: '../home/home'
@@ -207,7 +208,7 @@
 						this.parmas = res
 						uni.setStorageSync('userInfor', JSON.stringify(res.data));
 						uni.setStorageSync('token', res.data.token);
-						uni.setStorageSync('roleId', res.data.roleId);
+						uni.setStorageSync('roleId', res.data.roleIds);
 						uni.setStorageSync('roleIdList',res.data.roleIdList);
 						// uni.redirectTo({
 						// 	url: '../home/home'

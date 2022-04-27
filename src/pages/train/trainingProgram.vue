@@ -26,19 +26,19 @@
 				</view>
 				<view class="tuliR flexEnd">
 					<!-- status -->
-					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' v-if="roleId==1||roleId==2">
+					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' v-permission="[1,2]">
 						<u-icon name="bell" color="#FFD767" size="38" class="tuliRImg"></u-icon>
-						</image> 通知
+						 通知
 					</view>
 					<view class="tuliRli tuliRlicolor1" @click.stop='detail(item)'>
 						<u-icon name="plus" class="tuliRImg" size="34"></u-icon>
 						查看训练专业队
 					</view>
-					<view class="tuliRli flexCenter1" @click='add(item)' v-if="roleId==1||roleId==2">
+					<view class="tuliRli flexCenter1" @click='add(item)' v-permission="[1,2]">
 						<image src="../../static/img/edit.png" mode="" class="tuliRImg">
 						</image> 编辑
 					</view>
-					<view class="tuliRli flexCenter1 tuliRlicolor" @click='dele(item)' v-if="roleId==1||roleId==2">
+					<view class="tuliRli flexCenter1 tuliRlicolor" @click='dele(item)' v-permission="[1,2]">
 						<image src="../../static/img/dele.png" mode="" class="tuliRImg"></image>
 						删除
 					</view>
@@ -48,7 +48,7 @@
 			</view>
 		</view>
 
-		<image src="../../static/img/add.png" mode="" class="imgAdd" @click='add()' v-if="roleId!=7"></image>
+		<image src="../../static/img/add.png" mode="" class="imgAdd" @click='add()' v-permission="[1,2,3,4,]"></image>
 		<u-loadmore :status="status" />
 	</view>
 </template>

@@ -69,7 +69,7 @@
 						:class="form.memberList&&form.memberList.length>0?'iulRtexColAct':'iulRtexCol'">
 						<!-- {{form.professionalTeamPersonInformationId?form.professionalTeamPersonInformationId:'请选择'}} -->
 						<view class="" v-if="form.memberList&&form.memberList.length>0">
-							<text v-for="(item,index) in form.memberList" class="iulRtexItem">{{item.name}}</text>
+							<text v-for="(item,index) in form.memberList" class="iulRtexItem" :key="index">{{item.name}}</text>
 						</view>
 						<view class="" v-else>
 							请选择

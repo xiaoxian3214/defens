@@ -20,14 +20,14 @@
 						</text>
 					</view>
 					<view class="meLiLcont flexCenter1">
-						<text class="blueDot"></text>
+						<!-- <text class="blueDot"></text> -->
 						{{item.position}}
 					</view>
 				</view>
-				<view class="tuliR flexEnd"	v-if="roleId!=3&&roleId!=7">
-					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' 	v-if="roleId==1||roleId==2">
+				<view class="tuliR flexEnd" v-permission="[1,2,4]">
+					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' v-permission="[1,2]">
 						<u-icon name="bell" color="#FFD767" size="38" class="tuliRImg"></u-icon>
-						</image> 通知
+				通知
 					</view>
 
 				</view>

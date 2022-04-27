@@ -22,10 +22,10 @@
 					</view>
 				</view>
 				<!-- 人防办和联络员可编辑，教员不行   v-if="roleId==1?item.isCity==1:true"-->
-				<view class="tuliR flexEnd"	v-if="roleId!=3&&roleId!=7">
-					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' 	v-if="(roleId==1||roleId==2)&&(item.informStatus == 1 || item.informStatus == 3)">
+				<view class="tuliR flexEnd" v-permission="[1,2,4]"	>
+					<view class="tuliRli flexCenter1 tuliRlicolor2" @click='inform(item)' v-permission="[1,2]" 	v-if="item.informStatus == 1 || item.informStatus == 3">
 						<u-icon name="bell" color="#FFD767" size="38" class="tuliRImg"></u-icon>
-						</image> 通知
+					 通知
 					</view>
 					<view class="tuliRli flexCenter1" @click='edit(item)'>
 						<image src="../../static/img/edit.png" mode="" class="tuliRImg">
